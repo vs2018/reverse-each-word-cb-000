@@ -7,6 +7,7 @@ def reverse_each_word(string)
     chars.each do |char|
       new_word.unshift(char)
     end
-    new_word.join
+    string = new_word.join
+    new_array << string
   end
 end
