@@ -15,7 +15,7 @@
 
 def reverse_each_word(string)
   array = string.split(" ")
-  return array.map do |word|
+  return array.collect do |word|
     chars = word.split("")
     new_word = []
     chars.each do |char|
