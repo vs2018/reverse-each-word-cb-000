@@ -5,7 +5,7 @@ def reverse_each_word(string)
     chars = word.split("")
     new_word = []
     chars.each do |char|
-      
+      new_word.unshift(char)
     end
   end
 end
