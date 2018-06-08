@@ -8,8 +8,7 @@ def reverse_each_word(string)
       new_word.unshift(char)
     end
     string = new_word.join
-    new_array << string + " "
+    new_array << string + " " if array.last != word
   end
   return new_array.join
-  
 end
