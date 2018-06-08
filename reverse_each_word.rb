@@ -15,7 +15,7 @@
 
 def reverse_each_word(string)
   array = string.split(" ")
-  array.collect do |word|
+  result = array.collect do |word|
     chars = word.split("")
     new_word = []
     chars.each do |char|
@@ -24,4 +24,5 @@ def reverse_each_word(string)
     string = new_word.join
     array.last != word ? string + " " : string
   end
+  result.join
 end
